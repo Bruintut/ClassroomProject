@@ -107,14 +107,22 @@
   
   html, body {
     height: 100%;
-    overflow: hidden;
+    
   }
   body {
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    background-image: url("../assets/imgs/filmes.png");
+    /*background: linear-gradient(to bottom, #74ABE2, #5563DE);*/
+    font-family: 'Ropa Sans', sans-serif;
+  }
+  #container-box-carousel{
+    margin-top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #74ABE2, #5563DE);
-    font-family: 'Ropa Sans', sans-serif;
+    
   }
   nav{
     position: fixed;
@@ -152,5 +160,70 @@
     background-color: orange;
     color: white;
   }
+  li>img{
+      width: 30px;
+      margin-left: 5px;
+      margin-top: 3px;
+  }
 
+  h1{
+      color: #eee;
+      margin-right: 12px;
+  }
+span{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 33.3%;
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
   
+  .flex-item {
+    background: rgb(60, 4, 105);
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    flex: 1 0 0px;
+    height: auto;
+    
+  }
+  .flex-title{
+      margin-left: auto;
+      align-items: center;
+      text-align: center;
+      
+  }
+
+  .title-initial-flex{
+      font-size: 60px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin-top: 20%;
+  }
+
+  .footer {
+    height: 7%;
+    margin-top: 20%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(174, 0, 255, 0.671);
+    color: white;
+    text-align: center;
+  }
+.text-footer{
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+}
